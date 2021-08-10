@@ -1,0 +1,263 @@
+// banner
+.banner{
+    margin-bottom: 3em;
+    .back{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            margin-bottom: 0;
+        }
+    }
+}
+// 自练课程
+.course{
+    .container{
+        .top{
+            margin-bottom: 5em;
+            .theme{
+                border-bottom: 1px solid #e8e8e8;
+                margin-bottom: 3em;
+                .title{
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #face00;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            .left{
+                width: 19%;
+            }
+            .right{
+                width: 79%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .box{
+                    width: 32%;
+                    .icon{
+                        width: 100%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .title{
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+                    span{
+                        position: absolute;
+                        left: 44%;
+                        top: 42%;
+                        color: white;
+                        font-size: 3em;
+                        border-radius: 100%;
+                        transition: all linear .3s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: translateY(-5px) scale(1.2);
+                            box-shadow: 0px 0px 5px 2px #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:980px) {
+        &{
+            .container{
+                .top{
+                    .theme{
+                        .title{
+                            font-size: 2em;
+                        }
+                        .info{
+                            font-size: 1em;
+                        }
+                    }
+                }
+                .bottom{
+                    .right{
+                        .box{
+                            .icon{
+                                span{
+                                    font-size: 1.7em;
+                                }
+                            }
+                            .title{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            padding-bottom: 1em;
+            .container{
+                .top{
+                    margin-bottom: 1em;
+                    .theme{
+                        margin-bottom: 1em;
+                        .title{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .bottom{
+                    .left{
+                        display: none;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// 背景
+.background{
+    background: url('../images/Self-training-course-back1.png') no-repeat left top;
+    background-size: cover;
+    padding: 5em 0;
+    margin-bottom: 5em;
+    .container{
+        .title{
+            width: 100%;
+            font-size: 2.5em;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:1200px) {
+        &{
+            .container{
+                .title{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:750px) {
+        &{
+            .container{
+                .title{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            padding: 3em 0;
+            margin-bottom: 2em;
+            .container{
+                .title{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+// 自学课程
+.self{
+    .container{
+        .content{
+            margin-bottom: 5em;
+            display: flex;
+            justify-content: space-between;
+            .left{
+                width: 19%;
+            }
+            .right{
+                width: 79%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .box{
+                    width: 32%;
+                    .icon{
+                        width: 100%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .title{
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+                    span{
+                        position: absolute;
+                        left: 44%;
+                        top: 42%;
+                        color: white;
+                        font-size: 3em;
+                        border-radius: 100%;
+                        transition: all linear .3s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: translateY(-5px) scale(1.2);
+                            box-shadow: 0px 0px 5px 2px #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }@media screen and (max-width:980px) {
+        &{
+            .container{
+                .content{
+                    .right{
+                        .box{
+                            .icon{
+                                span{
+                                    font-size: 1.7em;
+                                }
+                            }
+                            .title{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            padding-bottom: 1em;
+            .container{
+                .content{
+                    margin-bottom: 1em;
+                    .left{
+                        display: none;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

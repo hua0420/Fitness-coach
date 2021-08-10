@@ -1,0 +1,380 @@
+// banner
+.banner{
+    margin-bottom: 3em;
+    .back{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            margin-bottom: 0;
+        }
+    }
+}
+// 课程介绍
+.curriculum{
+    background: #fff;
+    .container{
+        .introduce{
+            .theme{
+                border-bottom: 1px solid #000;
+                margin-bottom: 5em;
+                .title{
+                    font-size: 2.5em;
+                    text-align: center;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #face00;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    text-align: center;
+                    width: 75%;
+                    margin: 0 auto 1em;
+                }
+            }
+            .content{
+                .top{
+                    display: flex;
+                    justify-content: space-between;
+                    .box{
+                        .img{
+                            margin-bottom: 1em;
+                        }
+                        .title{
+                            font-size: 1.5em;
+                            font-weight: bold;
+                            text-align: center;
+                            cursor: pointer;
+                            transition: all linear .3s;
+                            &:hover{
+                                color: #face00;
+                            }
+                        }
+                        .info{
+                            margin-bottom: 2em;
+                            ul{
+                                li{
+                                    text-align: center;
+                                    font-size: 1.2em;
+                                    line-height: 2em;
+                                }
+                            }
+                        }
+                        .more{
+                            text-align: center;
+                            a{
+                                display: inline-block;
+                                font-size: 1.5em;
+                                width: 38%;
+                                text-align: center;
+                                background: #000;
+                                color: #fff;
+                                margin-bottom: 4em;
+                                transition: all linear .3s;
+                                &:hover{
+                                    transform: translateY(-5px) scale(1.2);
+                                    box-shadow: 0px 0px 5px 2px #ccc;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: space-between;
+                    .box{
+                        width: 48%;
+                        .title{
+                            font-size: 2em;
+                            font-weight: bold;
+                            border-bottom: 1px solid #cacaca;
+                            margin-bottom: .7em;
+                            cursor: pointer;
+                            transition: all linear .3s;
+                            &:hover{
+                                color: #face00;
+                            }
+                        }
+                        .list{
+                            margin-bottom: 5em;
+                            .address{
+                                font-size: 1em;
+                            }
+                            .info{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:980px) {
+        &{
+            .container{
+                .introduce{
+                    .theme{
+                        .title{
+                            font-size: 2em;
+                        }
+                        .info{
+                            font-size: 1em;
+                        }
+                    }
+                    .content{
+                        .top{
+                            .box{
+                                .info{
+                                    ul{
+                                        li{
+                                            font-size: .8em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:800px) {
+        &{
+            .container{
+                .introduce{
+                    .content{
+                        .top{
+                            width: 100%;
+                            flex-wrap: wrap;
+                            .box{
+                                display: flex;
+                                justify-content: space-around;
+                                margin: 0 auto;
+                                
+                                .img{
+                                    width: 50%;
+                                }
+                                .list{
+                                    width: 50%;
+                                    .info{
+                                        margin-bottom: 0em;
+                                        li{
+                                            width: 100%;
+                                            line-height: 2.5em;
+                                        }
+                                    }
+                                    .more{
+                                        a{
+                                            margin-bottom: 0em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            flex-wrap: wrap;
+                            .box{
+                                width: 95%;
+                                margin: 0 auto;
+                                .img{
+                                    width: 100%;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            .container{
+                .introduce{
+                    .theme{
+                        margin-bottom: 1em;
+                        .title{
+                            font-size: 1.5em;
+                        }
+                    }
+                    .content{
+                        .top{
+                            .box{
+                                .img{
+                                    width: 48%;
+                                }
+                                .list{
+                                    width: 48%;
+                                    .title{
+                                        font-size: 1.2em;
+                                        text-align: left;
+                                    }
+                                    .info{
+                                        
+                                        ul{
+                                            li{
+                                                line-height: 1.8em;
+                                                text-align: left;
+                                                white-space: nowrap;
+                                                overflow-x: hidden;
+                                                text-overflow: ellipsis;
+                                            }
+                                        }
+                                    }
+                                    .more{
+                                        a{
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            .box{
+                                width: 100%;
+                                .title{
+                                    font-size: 1.5em;
+                                    margin-bottom: .3em;
+                                }
+                                .list{
+                                    margin-bottom: .5em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 视频热门
+.video{
+    background: #fff;
+    padding-bottom: 5em;
+    .container{
+        .top{
+            .theme{
+                border-bottom: 1px solid #000;
+                margin-bottom: 5em;
+                .title{
+                    font-size: 2.5em;
+                    text-align: center;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #face00;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    text-align: center;
+                    width: 75%;
+                    margin: 0 auto 1em;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            .left{
+                width: 19%;
+            }
+            .right{
+                width: 79%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .box{
+                    width: 32%;
+                    .icon{
+                        width: 100%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .title{
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+                    span{
+                        position: absolute;
+                        left: 44%;
+                        top: 42%;
+                        color: white;
+                        font-size: 3em;
+                        cursor: pointer;
+                        border-radius: 100%;
+                        transition: all linear .3s;
+                        &:hover{
+                            transform: translateY(-5px) scale(1.2);
+                            box-shadow: 0px 0px 5px 2px #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:980px) {
+        &{
+            .container{
+                .top{
+                    .theme{
+                        .title{
+                            font-size: 2em;
+                        }
+                        .info{
+                            font-size: 1em;
+                        }
+                    }
+                }
+                .bottom{
+                    .right{
+                        .box{
+                            .icon{
+                                span{
+                                    font-size: 1.7em;
+                                }
+                            }
+                            .title{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            padding-bottom: 1em;
+            .container{
+                .top{
+                    .theme{
+                        margin-bottom: 1em;
+                        .title{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .bottom{
+                    .left{
+                        display: none;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

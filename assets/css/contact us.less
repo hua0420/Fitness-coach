@@ -1,0 +1,256 @@
+// banner
+.banner{
+    margin-bottom: 3em;
+    .back{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            margin-bottom: 0;
+        }
+    }
+}
+// 在线报名
+.sign{
+    .container{
+        .top{
+            .theme{
+                border-bottom: 1px solid #e6e6e6;
+                margin-bottom: 5em;
+                .title{
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    transition: all linear .3s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #face00;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    margin: 0 auto 1em;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            margin-bottom: 5em;
+            justify-content: space-between;
+            .left{
+                width: 59%;
+                border: 1px solid #efefef;
+                ul{
+                    width: 100%;
+                    text-align: center;
+                    li{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        span{
+                            width: 25%;
+                            font-size: 2em;
+                        }
+                        input{
+                            width: 60%;
+                            border: 1px solid #efefef;
+                            border-radius: 3px;
+                        }
+                        select{
+                            width: 60%;
+                            border: 1px solid #efefef;
+                            border-radius: 3px;
+                        }
+                        &:last-child{
+                            margin-bottom: 5em;
+                            input{
+                                width: 30%;
+                                font-size: .7em;
+                                color: #f0f0f0;
+                                background: #8e8e8e;
+                                border: 0;
+                                padding: 1em 0;
+                                cursor: pointer;
+                                transition: all linear .3s;
+                                &:hover{
+                                    box-shadow: 0 0 5px #222;
+                                    transform: translateY(-5px);
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .right{
+                width: 39%;
+                .item{
+                    .title{
+                        font-weight: bold;
+                        font-size: 1.5em;
+                        transition: all linear .3s;
+                        cursor: pointer;
+                        &:hover{
+                            color: #face00;
+                        }
+                    }
+                }
+                .info{
+                    li{
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:680px) {
+        &{
+            .container{
+                .bottom{
+                    flex-wrap: wrap;
+                    .left{
+                        width: 100%;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:450px){
+        &{
+            .container{
+                .top{
+                    .theme{
+                        margin-bottom: 2em;
+                        .title{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .bottom{
+                    margin-bottom: 2em;
+                    .left{
+                        ul{
+                            li{
+                                span{
+                                    font-size: 1.3em;
+                                }
+                                &:last-child{
+                                    margin-bottom: 2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 联系我们
+.contact{
+    .container{
+        .top{
+            .theme{
+                border-bottom: 1px solid #e6e6e6;
+                margin-bottom: 5em;
+                .title{
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    transition: all linear .3s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #face00;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    margin: 0 auto 1em;
+                }
+            }
+        }
+        .bottom{
+            .item{
+                display: flex;
+                justify-content: space-around;
+                .line{
+                    margin-bottom: 3em;
+                    a{
+                        font-size: 2em;
+                        color: #858585;
+                        margin-right: .5em;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: #face00;
+                            transform: scale(1.2);
+                        }
+                    }
+                    span{
+                        font-size: 1.5em;
+                        transition: all linear .3s;
+                        cursor: pointer;
+                        &:hover{
+                            color: #face00;
+                        }
+                    }
+                }
+            }
+            .map{
+                width: 100%;
+                height: 30em;
+                overflow: hidden;
+                margin-bottom: 3em;
+            }
+        }
+    }
+    @media screen and (max-width:700px) {
+        &{
+            .container{
+                .top{
+                    .theme{
+                        .title{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .bottom{
+                    .item{
+                        flex-wrap: wrap;
+                        .line{
+                            width: 100%;
+                        }
+                    }
+                    .map{
+                        height: 20em;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            .container{
+                .top{
+                    .theme{
+                        margin-bottom: 2em;
+                    }
+                }
+                .bottom{
+                    .item{
+                        .line{
+                            margin-bottom: 1em;
+                        }
+                    }
+                    .map{
+                        height: 10em;
+                    }
+                }
+            }
+        }
+    }
+}

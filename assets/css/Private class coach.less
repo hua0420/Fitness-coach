@@ -1,0 +1,231 @@
+// banner
+.banner{
+    margin-bottom: 3em;
+    .back{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            margin-bottom: 0;
+        }
+    }
+}
+// 课程介绍
+.curriculum{
+    .container{
+        .top{
+            .theme{
+                border-bottom: 1px solid #e8e8e8;
+                margin-bottom: 3em;
+                .title{
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #face00;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+        .content{
+            .one{
+                display: flex;
+                padding: 1em;
+                justify-content: space-between;
+                border: 1px solid #bebebe;
+                margin-bottom: 3em;
+                .img{
+                    width: 28%;
+                    display: flex;
+                    align-items: center;
+                }
+                .box{
+                    width: 70%;
+                    .theme{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 1.5em;
+                        .title{
+                            font-size: 1.5em;
+                            font-weight: bold;
+                            transition: all linear .3s;
+                            cursor: pointer;
+                            &:hover{
+                                color: #ffc001;
+                            }
+                        }
+                        span{
+                            width: 25%;
+                            background: #ffc001;
+                            border-radius: 5px;
+                            font-size: 1.2em;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 1em 0;
+                            transition: all linear .3s;
+                            cursor: pointer;
+                            &:hover{
+                                transform: translateY(-5px);
+                                box-shadow: 0 0 5px #123;
+                            }
+                        }
+                    }
+                    .list{
+                        li{
+                            font-size: 1.2em;
+                        }
+                    }
+                    .info{
+                        font-size: 1em;
+                        margin-bottom: 2em;
+                    }
+                    .more{
+                        a{
+                            width: 20%;
+                            background: #ffc001;
+                            font-size: 1.2em;
+                            text-align: center;
+                            padding: .5em 0;
+                            font-weight: bold;
+                            color: black;
+                            border-radius: 3px;
+                            transition: all linear .3s;
+                            &:hover{
+                                color: white;
+                                transform: translateY(-5px) scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1000px){
+        &{
+            .container{
+                .content{
+                    .one{
+                        .box{
+                            .theme{
+                                margin-top: 0;
+                                span{
+                                    font-size: 1em;
+                                    padding: .5em 0;
+                                }
+                            }
+                            .info{
+                                margin-bottom: .5em;
+                            }
+                            .more{
+                                font-size: .7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:750px){
+        &{
+            .container{
+                .content{
+                    .one{
+                        .box{
+                            .info{
+                                height:4em;
+                                overflow-y: scroll;
+                                /*修改滚动条样式*/
+                                &::-webkit-scrollbar {
+                                    width: 20px;
+                                    height: 8px;
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 12px;
+                                    border: 8px solid rgba(0, 0, 0, 0);
+                                    box-shadow: 8px 0 0 #A5ADB7 inset;
+                                    box-shadow: 8px 0 0 rgba(175, 35, 35, 0.5) inset;
+                                }
+                                &::-webkit-scrollbar-thumb:hover {
+                                    box-shadow: 8px 0 0 rgb(184, 39, 39) inset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:550px){
+        &{
+            .container{
+                .top{
+                    .theme{
+                        .title{
+                            font-size: 1.5em;
+                        }
+                        .info{
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+                .content{
+                    .one{
+                        .img{
+                            width: 33%;
+                        }
+                        .box{
+                            width: 65%;
+                            .theme{
+                                .title{
+                                    font-size: 1em;
+                                }
+                                span{
+                                    font-size: .7em;
+                                }
+                            }
+                            .list{
+                                li{
+                                    font-size: 1em;
+                                }
+                            }
+                            .info{
+                                font-size: 1em;
+                            }
+                            .more{
+                                a{
+                                    width: 35%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:450px){
+        &{
+            .container{
+                .content{
+                    .one{
+                        .img{
+                            display: none;
+                        }
+                        .box{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

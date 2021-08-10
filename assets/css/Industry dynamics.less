@@ -1,0 +1,151 @@
+// banner
+.banner{
+    margin-bottom: 3em;
+    .back{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            margin-bottom: 0;
+        }
+    }
+}
+// 行业动态
+.industry{
+    .container{
+        .top{
+            .theme{
+                border-bottom: 1px solid #e8e8e8;
+                margin-bottom: 3em;
+                .title{
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #ffc001;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+        .center{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5em;
+            .img{
+                width: 46%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .bottom{
+            .list{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 3em;
+                align-items: center;
+                .item{
+                    width: 7em;
+                    height: 7em;
+                    text-align: center;
+                    background: #f2f2f2;
+                    align-items: center;
+                    padding: .5em 0;
+                    span{
+                        font-size: 2em;
+                        font-weight: bold;
+                    }
+                    p{
+                        color: #4a4a4a;
+                    }
+                }
+                .theme{
+                    width: 100%;
+                    .title{
+                        width: 95%;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        color: #131313;
+                        margin: 0 auto;
+                        cursor: pointer;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: #ffc001;
+                        }
+                    }
+                    .info{
+                        width: 95%;
+                        margin: 0 auto;
+                        font-size: 1.2em;
+                        color: #bebebe;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:700px) {
+        &{
+            .container{
+                .center{
+                    flex-wrap: wrap;
+                    .img{
+                        width: 100%;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            .container{
+                .top{
+                    .theme{
+                        .title{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .center{
+                    margin-bottom: 1em;
+                }
+                .bottom{
+                    .list{
+                        margin-bottom: 1em;
+                        .theme{
+                            .title{
+                                font-size: 1.2em;
+                            }
+                            .info{
+                                height:3.5em;
+                                overflow-y: scroll;
+                                /*修改滚动条样式*/
+                                &::-webkit-scrollbar {
+                                    width: 20px;
+                                    height: 8px;
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 12px;
+                                    border: 8px solid rgba(0, 0, 0, 0);
+                                    box-shadow: 8px 0 0 #A5ADB7 inset;
+                                    box-shadow: 8px 0 0 rgba(175, 35, 35, 0.5) inset;
+                                }
+                                &::-webkit-scrollbar-thumb:hover {
+                                    box-shadow: 8px 0 0 rgb(184, 39, 39) inset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

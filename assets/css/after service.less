@@ -1,0 +1,278 @@
+// banner
+.banner{
+    margin-bottom: 3em;
+    .back{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            margin-bottom: 0;
+        }
+    }
+}
+// 售后服务案例
+.sale{
+    .container{
+        .top{
+            .theme{
+                border-bottom: 1px solid #e8e8e8;
+                margin-bottom: 3em;
+                .title{
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #face00;
+                    }
+                }
+                .info{
+                    font-size: 1.5em;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+        .list{
+            margin-bottom: 3em;
+            .back{
+                display: flex;
+                justify-content: space-between;
+                .img{
+                    width: 48%;
+                    img{
+                        cursor: pointer;
+                        user-select: none;
+                    }
+                }
+            }
+            .content{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .box{
+                    padding: 1em 0;
+                    width: 48%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px dashed #bfbfbf;
+                    align-items: center;
+                    .img{
+                        width: 24%;
+                        img{
+                            width: 100%;
+                            transition: all linear .3s;
+                            cursor: pointer;
+                            user-select: none;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    .theme{
+                        width: 74%;
+                        .title{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            white-space:nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            color: #000;
+                            cursor: pointer;
+                            span{
+                                font-weight: bold;
+                                font-size: 1.1em;
+                                color: #474747;
+                                white-space:nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .info{
+                            color: #474747;
+                        }
+                    }
+                }
+            }
+        }
+        .more{
+            text-align: center;
+            button{
+                width: 15%;
+                font-size: 1.2em;
+                margin: 0 auto;
+                margin-bottom: 3em;
+                padding: .5em 0;
+                font-weight: bold;
+                background: #fff;
+                border-radius: 8px;
+                transition: all linear .3s;
+                &:hover{
+                    transform: translateY(-5px);
+                    box-shadow: 0 0 10px #000;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1000px){
+        &{
+            .container{
+                .list{
+                    .back{
+                        flex-wrap: wrap;
+                        .img{
+                            width: 80%;
+                            margin: 0 auto;
+                            &:nth-child(1){
+                                margin-bottom: 1em;
+                            }
+                        }
+                    }
+                    .content{
+                        flex-wrap: wrap;
+                        .box{
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:600px){
+        &{
+            .container{
+                .top{
+                    .theme{
+                        .title{
+                            font-size: 1.5em;
+                        }
+                        .info{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+                .list{
+                    .back{
+                        .img{
+                            width: 100%;
+                        }
+                    }
+                    .content{
+                        .box{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:550px){
+        &{
+            .container{
+                .list{
+                    margin-bottom: 1em;
+                    .content{
+                        .box{
+                            .theme{
+                                .info{
+                                    height:3em;
+                                    overflow-y: scroll;
+                                    /*修改滚动条样式*/
+                                    &::-webkit-scrollbar {
+                                        width: 20px;
+                                        height: 8px;
+                                    }
+                                    &::-webkit-scrollbar-thumb {
+                                        border-radius: 12px;
+                                        border: 8px solid rgba(0, 0, 0, 0);
+                                        box-shadow: 8px 0 0 #A5ADB7 inset;
+                                        box-shadow: 8px 0 0 rgba(175, 35, 35, 0.5) inset;
+                                    }
+                                    &::-webkit-scrollbar-thumb:hover {
+                                        box-shadow: 8px 0 0 rgb(184, 39, 39) inset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .more{
+                    button{
+                        font-size: 1em;
+                        width: 25%;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+// 联系售后
+.contact{
+    padding: 10em 0 5em;
+    background: url(../images/After-sale-back.png) no-repeat;
+    background-size: cover;
+    .container{
+        .back{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            .icon{
+                text-align: center;
+                .img{
+                    width: 100%;
+                    margin-bottom: 2em;
+                    cursor: pointer;
+                    user-select: none;
+                    transition: all linear .3s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .title{
+                    font-size: 2em;
+                    color: #fff;
+                    transition: all linear .3s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #face00;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    @media  screen and (max-width:980px) {
+        &{
+            .container{
+                .back{
+                    .icon{
+                        .img{
+                            width: 80%;
+                            margin: 0 auto 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px) {
+        &{
+            padding: 6em 0 3em;
+            .container{
+                .back{
+                    .icon{
+                        .title{
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
